@@ -1,0 +1,14 @@
+{
+    "builds":[
+        {
+            "src":"tsapp/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "tsapp/wsgi.py"
+        }
+    ]
+}     
